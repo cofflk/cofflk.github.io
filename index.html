@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css"></link>
+    <title>Todo List</title>
+</head>
+<body>
+    <div>
+        Timer: <span id="timer"></span>
+    </div>
+
+    <div id="loginname" class="hidden">
+        Login Name: <span id="timer"></span>
+    </div>
+
+    <form class="hidden" id="form-login">
+        <input type="text" placeholder="Input Login Name" maxlength="20" required />
+        <input type="submit" value="Log in">
+    </form>
+
+    <form class="hidden" id="form-todo">
+        <input type="text" placeholder="Input Todo Item" required />
+    </form>
+
+    <div>
+        <ul id="todolist"></ul>
+    </div>
+
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+    <script src="clock.js"></script>
+    <script src="login.js"></script>
+    <script src="todo.js"></script>
+    <script src="background.js"></script>
+
+    <script src="../open-meteo/ts/weather_api.ts"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
